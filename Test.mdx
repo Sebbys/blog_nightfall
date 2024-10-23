@@ -1,0 +1,169 @@
+---
+title: "GIT & GITHUB"
+date: "2024-09-25"
+description: "This material contains information about how to install and use Git and GitHub."
+author: Fito
+category: [Git, Github, Beginner]
+---
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448988/github_PNG23_1_cqliq8.png" alt="Build Status"/>
+</p>
+
+### A. Git Definition
+Git is a version control system that allows developers to track changes made to their codebase over time. It’s a distributed system, meaning every developer working on a project has a local copy of the entire project history, making collaboration easy both online and offline.
+
+Git is also known as a distributed revision control system (VCS), meaning the Git database isn’t just stored in one location. Every person involved in coding the project will store a Git database, making it easier to manage the project both online and offline.
+
+#### Basic Concepts
+1. **Repository (Repo):** A Git repository is where all files and project history are stored.
+2. **Commit:** A commit is a snapshot of the project at a specific point in time. When you make changes to the code, you commit those changes to the repository.
+3. **Branch:** A branch is a separate line of development within the repository. You can create multiple branches to work on different features or fixes without affecting the main codebase.
+4. **Merge:** When you’re ready to combine changes from one branch into another, you merge the two branches.
+5. **Push:** When you push changes to a remote repository, you update the remote repository with your local changes.
+6. **Pull:** When you pull changes from a remote repository, you update your local repository with changes from the remote repository.
+
+#### How Git Works
+- **Initialize a repository:** You create a new Git repository by running `git init` in your project directory.
+- **Add files:** You add files to the repository using `git add <file>` or `git add .` to add all files in the directory.
+- **Commit changes:** You commit changes to the repository using `git commit -m "commit message"`.
+- **Create a branch:** You create a new branch using `git branch <branch-name>`.
+- **Switch to branch:** You switch to a branch using `git checkout <branch-name>`.
+- **Make changes:** You make changes to the code and commit them to the branch.
+- **Merge branch:** You merge changes from one branch to another using `git merge <branch-name>`.
+- **Push changes:** You push changes to the remote repository using `git push origin <branch-name>`.
+- **Pull changes:** You pull changes from the remote repository using `git pull origin <branch-name>`.
+
+### B. Git Installation
+
+For Git installation, you need a **laptop with Windows 7, 8, or 10** and a **web browser (Firefox, Google Chrome, Edge)**.
+
+#### Installation Steps
+##### On Windows:
+1. Visit the official Git website at `https://git-scm.com/` and download Git, matching your system's bit version.
+2. Click the downloaded file. You’ll see the Git license information, then click Next > to proceed.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727447844/Screenshot_1541_fmktas.png" alt="Build Status"/>
+   </p>
+3. Specify the installation directory (leave it as default), then click Next >.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727447973/Screenshot_1542_dujvr2.png" alt="Build Status"/>
+   </p>
+4. For component selection, leave it as is, then proceed with Next >.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727447973/Screenshot_1543_tcr7e6.png" alt="Build Status"/>
+   </p>
+5. Choose the start menu folder, click Next > to proceed.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727447973/Screenshot_1544_slwuly.png" alt="Build Status"/>
+   </p>
+6. Select the PATH Environment option (choose the middle option so that Git commands are recognized in Command Prompt). Click Next >.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727447973/Screenshot_1545_rgaeax.png" alt="Build Status"/>
+   </p>
+7. For line ending conversion, leave it as is, then click Next >.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727447973/Screenshot_1546_tfvach.png" alt="Build Status"/>
+   </p>
+8. Choose the terminal emulator option (select the bottom one), then click Next >.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727447972/Screenshot_1547_icauzy.png" alt="Build Status"/>
+   </p>
+9. Once completed, click Finish.
+   <p align="center">
+   <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448676/Screenshot_1550_nymcn5.png" alt="Build Status"/>
+   </p>
+
+##### On Linux:
+1. Install Git on Debian-based distros using the command:
+
+    ```bash
+    sudo apt install git
+    ```
+
+2. Check the installed version with the command:
+
+    ```bash
+    git --version
+    ```
+
+### C. GitHub Definition
+GitHub is a platform that allows developers to store and access code in a single place. It facilitates code management online, either individually or when collaborating with a team. GitHub allows you to create repositories, branches, commits, pull requests, and manage code online.
+
+It also provides cloud services to store and manage Git repositories, allowing teams to collaborate on projects from different locations.
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448675/Screenshot_1553_tuvgzn.png" alt="GitHub Interface"/>
+</p>
+
+### D. How to Use GitHub
+#### 1. Creating a GitHub Account
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448673/Screenshot_1551_qdyrny.png" alt="GitHub Sign Up"/>
+</p>
+
+
+When you first visit GitHub, if you don’t have an account, sign up using the button in the top right corner to create your account.
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448671/Screenshot_1552_ytd4sb.png" alt="GitHub Sign Up"/>
+</p>
+
+Enter an email that hasn’t been registered before, and after filling in your password, click continue.
+
+Once done, sign in to GitHub with your username or email and password.
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448671/Screenshot_1554_xjjfg2.png" alt="Create Repository"/>
+</p>
+
+#### 2. Creating a Repository
+Navigate to the overview section, click the "+" icon in the top right, and select "New Repository."
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448671/Screenshot_1555_qw7wcn.png" alt="Create Repository"/>
+</p>
+
+Fill in the repository name and description based on your project requirements. You can also set the repository to public or private.
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448671/Screenshot_1556_yakjih.png" alt="Create Repository"/>
+</p>
+
+#### 3. Configure Git
+Configure your GitHub account’s name and email:
+
+```bash
+git config --global user.name "fitosatrioo"
+git config --global user.email contoh@gmail.com
+```
+
+Verify the configuration using:
+
+```bash
+Copy code
+git config --list
+```
+
+### 4. Pushing a Repository
+Navigate to the folder you want to push, open Command Prompt (cmd), and use the following commands:
+
+<p align="center">
+<img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448671/Screenshot_1559_kzisjv.png" alt="Create Repository"/>
+</p>
+
+Copy code
+
+```bash
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/yourusername/yourproject.git
+git push -u origin main
+```
+
+If successful, your repository should look like this:
+
+<p align="center"> <img src="https://res.cloudinary.com/dtzqdo3p0/image/upload/v1727448670/Screenshot_1560_cck1o4.png" alt="GitHub Repository"/> </p>
